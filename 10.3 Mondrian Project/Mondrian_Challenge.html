@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+    }
+    .container{
+        width: 268px;
+        height: 268px;
+        background: black;
+        display: grid;
+        gap: 2px;
+        border: 2px solid black;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+    }
+    .white1{
+        background-color: blanchedalmond;
+        grid-area: 1 / span 8;
+    }
+    .red1{
+        background-color: red;
+        grid-area: 2 / span 6;
+    }
+    .yellow1{
+        background: yellow;
+        grid-area: 3 / 1 / span 7;
+    }
+    .white2{
+        background: blanchedalmond;
+        grid-area: 3 / 2 / 4 / 5;
+    }
+    .yellow2{
+        background: yellow;
+        grid-area: 3 / 5 / 5 / 7;
+    }
+    .blue1{
+        background: blue;
+        grid-area: 2 / 7 / 5 / 9;
+    }
+    .red2{
+        background: red;
+        grid-area: 4 / 2 / span 4;
+    }
+    .blue2{
+        background: blue;
+        grid-area: 4 / span 2 / span 2;
+    }
+    .red3{
+        background: red;
+        grid-area: 5 / 5 / 6 / 8;
+    }
+    .yellow3{
+        background: yellow;
+        grid-area: 5 / 8 / span 4;
+    }
+    .yellow4{
+        background: yellow;
+        grid-area: 6 / span 3 / 8;
+    }
+    .blue3{
+        background: blue;
+        grid-area: 6 / 6 / 9 / 8;
+    }
+    .white3{
+        background: blanchedalmond;
+        grid-area: 8 / span 4;
+    }
+    .red4{
+        background: red;
+        grid-area: 9 / span 7  ;
+    }
+
+    
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="white1"></div>
+        <div class="white2"></div>
+        <div class="white3"></div>
+        <div class="red1"></div>
+        <div class="red2"></div>
+        <div class="red3"></div>
+        <div class="red4"></div>
+        <div class="yellow1"></div>
+        <div class="yellow2"></div>
+        <div class="yellow3"></div>
+        <div class="yellow4"></div>
+        <div class="blue1"></div>
+        <div class="blue2"></div>
+        <div class="blue3"></div>
+
+    </div>
+    
+</body>
+</html>
